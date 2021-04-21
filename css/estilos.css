@@ -1,0 +1,178 @@
+/*CONTENIDO GENERAL*/
+
+/*Scroll suave en toda la pagina*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Responsive design*/
+
+/*PC*/
+
+@media (max-width:1200px) {
+	a.menu {
+		padding: 1%;
+	}
+}
+
+/*Tablet*/
+
+@media (max-width:992px) {
+	a.menu {
+		padding: 1%;
+	}
+}
+
+/*Smartphone*/
+
+@media (max-width:768px) {
+	a.menu {
+		padding: 1%;
+	}
+}
+
+/*XS SmartPhone*/
+
+@media (max-width:576px) {
+	a.menu {
+		padding: 1%;
+	}
+}
+
+/*Margenes de cada etiqueta section del documento*/
+.Beneficios, .Consejos, .Experiencias, .Nosotros, .Contacto {
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+
+#consejosTitulos > h4 {
+    margin-bottom: 3%;
+}
+
+
+
+/*MENU DE LA PAGINA*/
+
+/*navbar color negro*/
+.nav {
+    background-color: black;
+}
+
+/*color blanco a las letras del menu*/
+.nav-link {
+    color: white;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: white;
+    background-color: #686b69;
+    transition: 0.3s;
+}
+
+/*Fuente personal de Body Care*/
+@font-face {
+    font-family: tituloFont; /*Variable de mi titulo*/
+    src: url(../fuentes/pervitina-dex-ffp.ttf);
+}
+
+#tituloPag {
+    font-family: tituloFont;
+    font-size: 22px;
+    padding-left: 2%;
+    padding-bottom: 0;
+    padding-top: 7px;
+    margin-right: 20%;
+}
+
+#tituloPag > a {
+    text-decoration: none;
+    color: #cc980a;
+}
+
+
+
+
+/*BENEFICIOS*/
+
+/*Ajuste de las imagenes de las
+cartas*/
+.Beneficios > .card-deck > .card > .card-img-top {
+    width: 100%;
+    height: 200px;
+}
+
+/*CONSEJOS*/
+/*Un poco de margen de abajo a los iconos*/
+i {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+/*EXPERIENCIAS*/
+
+/*Ajuste de las cartas*/
+
+.Experiencias > .row > .card {
+    width: 600px;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+/*Ajuste de las imagenes de las cartas*/
+.Experiencias  > .row > .card
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+
+/*NOSOTROS*/
+
+/*Parrafos*/
+
+/*Titulo Quienes somos?*/
+.Nosotros > .container > h3 {
+    color: #dbdad7;
+    padding-bottom: 5%;
+    font-size: 40px;
+}
+
+/*Subtitulos*/
+.parrafosNosotros > h3 {
+    color: #dbdad7;
+}
+
+/*Centralizado de los parrafos*/
+.parrafosNosotros {
+    text-align: center;
+    color: #dbdad7
+}
+
+/*Un poco de padding al contenedor de los parrafos*/
+#contenedorParrafosNosotros {
+    padding: 3%;
+}
+
+
+/*IMAGENES DEL SLIDESHOW*/
+
+/*Ajuste de las imagenes*/
+.imgSlides {
+    width: 100%;
+    height: 600px;
+}
+
+/*Descripcion*/
+.carousel-caption {
+    padding: 1%;
+    background-color: black;
+    opacity: 0.6;
+    font-size: 120%;
+}
+
+.carousel-caption:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+

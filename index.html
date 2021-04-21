@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Bienvenido a Body Care</title>
+
+    <!--Para aplicar el responsive-->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <!--Renderizado de parte de bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Mi CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--Animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+
+</head>
+
+<body>
+
+    <!--Encabezado de la pagina-->
+
+    <header>
+
+        <!--Menu de navegacion implementando bootstrap-->
+        <section id="menu" class="Menu">
+            
+            <!--Menu de navegcion definido. Menu estatico en el top de la pagina-->
+            <nav class="nav fixed-top">
+                
+                <!--Titulo de la pagina en el menu-->
+                <div id="tituloPag" class="animated bounceInLeft">
+                    <a href="#menu">Body Care</a>
+                </div>
+                
+                <!--Opciones-->
+                <!--OJO: LOS ID DE href ESTAN EN CADA <SECTION> DE ESTE DOCUMENTO-->
+                <!--Estos id en las secciones permiten el desplazamiento en la misma pagina
+                a través de las opciones del menú-->
+                <li class="nav-item animated bounceInRight">
+                    <a class="nav-link" href="#BeneficiosCont">Beneficios</a>
+                </li>
+        
+                <li class="nav-item animated bounceInRight">
+                    <a class="nav-link" href="#ConsejosCont">Consejos</a>
+                </li>
+        
+                <li class="nav-item animated bounceInRight">
+                    <a class="nav-link" href="#ExpCont">Experiencias</a>
+                </li>
+        
+                <li class="nav-item animated bounceInRight">
+                    <a class="nav-link" href="#NosotrosCont">Nosotros</a>
+                </li>
+        
+                <li class="nav-item animated bounceInRight">
+                    <a class="nav-link" href="#ContactCont">Contacto</a>
+                </li>
+        
+            </nav>
+    
+        </section>
+
+        <!--Slideshow-->
+
+        <section class="Slideshow">
+
+            <div id="mySlideShow" class="carousel slide" data-ride="carousel">
+
+                <!--Indicadores-->
+                <ul class="carousel-indicators">
+                    <li data-target="#mySlideShow" data-slide-to="0" class="active"></li>
+                    <li data-target="#mySlideShow" data-slide-to="1"></li>
+                    <li data-target="#mySlideShow" data-slide-to="2"></li>
+                    <li data-target="#mySlideShow" data-slide-to="3"></li>
+                </ul>
+
+                <!--Imagenes-->
+                <!--Dentro del carousel-->
+                <div class="carousel-inner">
+
+                    <!--Primer item/imagen-->
+                    <div class="carousel-item active">
+                        <img class="imgSlides" src="Imagenes/Slideshow/running.jpg">
+                        <div class="carousel-caption wow bounceInDown" data-wow-duration="2s">
+                            <h2>Correr</h2>
+                            <p>
+                                Ejercicio básico para calentar el cuerpo y poder activarlo.
+                                Ayuda a desarrollar la resistencia y a quemar calorias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Segunda imagen-->
+                    <div class="carousel-item">
+                        <img class="imgSlides" src="Imagenes/Slideshow/gym.jpg">
+                        <div class="carousel-caption wow bounceInDown" data-wow-duration="2s">
+                            <h2>Levantar pesas</h2>
+                            <p>
+                                Es importante este ejercicio por las diferentes ventajas
+                                que otorga, tales como: adquirir resistencia muscular, adquirir
+                                mayor masa muscular y adquier más fuerza para levantar diferentes 
+                                objetos pesados.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Tercera imagen-->
+                    <div class="carousel-item">
+                        <img class="imgSlides" src="Imagenes/Slideshow/food.jpg">
+                        <div class="carousel-caption wow bounceInDown" data-wow-duration="2s">
+                            <h2>Mejorar la alimentación</h2>
+                            <p>
+                                No se trata solamente de hacer ejercicio para estar en salud.
+                                La alimentación es importante ya que nos ofrece las proteínas
+                                necesarias para nuestro cuerpo. Ambos deben ir de la mano.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Cuarta imagen-->
+                    <div class="carousel-item">
+                        <img class="imgSlides" src="Imagenes/Slideshow/bicycle.jpg">
+                        <div class="carousel-caption wow bounceInDown" data-wow-duration="2s">
+                            <h2>Practica un hobby deportivo</h2>
+                            <p>
+                                La vida está llena de diferentes deportes que nos pueden gustar.
+                                Todos estos deportes no solamente satisface nuestra diversión,
+                                ayuda a nuestro cuerpo a estar ejercitado y desestresado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Botones de avanzar y retroceder-->
+                <a class="carousel-control-prev" href="#mySlideShow" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#mySlideShow" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </header>
+
+    <!--Contenido de la pagina-->
+
+    <hr>
+
+    <!--Seccion de Beneficios-->
+
+    <section id="BeneficiosCont" class="Beneficios container">
+
+        <!--Titulo de la seccion Beneficios-->
+        <h3 class="text-center wow fadeInDown" style="margin-bottom: 4%">Beneficios de practicar una actividad física</h3>
+
+        <!--Cartas ordenadas en columnas y con mismo tamaño por esta clase-->
+        <div class="card-deck wow fadeInUp">
+
+            <!--Primera carta de Beneficios-->
+            <div class="card">
+                <img class="card-img-top" src="Imagenes/Beneficios/relax.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Libera stress</h5>
+                    <p class="card-text">El ejercicio ayuda a distraer la mente y por lo tanto
+                    aleja el stress ya que tu mente está concentrada en el ejercicio.
+                    </p>
+                </div>
+            </div>
+
+            <!--Segunda carta de Beneficios-->
+            <div class="card">
+                <img class="card-img-top" src="Imagenes/Beneficios/Highly-Productive.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Ayuda a la productividad</h5>
+                    <p class="card-text">Un cuerpo ejercitado, es un cuerpo activo y
+                    eso implica una mente activa. Cuando te ejercitas, tu cuerpo obtiene
+                    nuevas energias, especialmente para iniciar un nuevo día o jornada.
+                    </p>
+                </div>
+            </div>
+            
+            <!--Tercera carta de Beneficios-->
+            <div class="card">
+                <img class="card-img-top" src="Imagenes/Beneficios/girl running.jpeg">
+                <div class="card-body">
+                    <h5 class="card-title"> Mejora la salud física</h5>
+                    <p class="card-text">Tener una vida sedentaria conlleva a un cuerpo
+                    no saludable aunque se tenga una buena alimentación. El cuerpo requiere
+                    de ejercicio físico para mejorar la salud cardiovascular y tener mayor
+                    resistencia en el cuerpo.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        
+
+    </section>
+
+    
+    <!--Contenido de Consejos-->
+
+    <section id="ConsejosCont" class="Consejos container-fluid">
+
+        <!--Titulo de Consejos-->
+        <h2 class="text-center wow fadeInDown" style="margin-bottom: 4%">Consejos que te ayudarán a mantenerte en forma</h2>
+
+        <!--Salto de linea-->
+        <br>
+
+
+        <!--Filas/contenedores de Consejos-->
+
+        <div class="row container-fluid" style="padding-bottom: 10%">
+
+            <!--Logica col-sm-3: 4 columnas que ocupan espacio de 3 mini-cols de una pag compuesta por 12 mini-cols-->
+            <!--4 x 3 = 12-->
+
+            <!--Columna de Vasos de agua-->
+            <div class="col-sm-3">
+
+                <!--Encabezado-->
+                <h4 class="text-center wow fadeInDown">Vasos de agua</h4>
+
+                <!--Fila para el icono-->
+                <div class="row-sm-3 text-center">
+                    <i class="material-icons text-center wow fadeIn" style="font-size: 50px">local_drink</i>
+                </div>
+
+                <!--Fila para el numero-->
+                <div class="row-sm-3 text-center">
+                    <h3 class="wow fadeInUp" style="font-size: 40px">15</h3>
+                </div>
+
+            </div>
+
+            <!--Columna de Horas de sueño-->
+            <div class="col-sm-3">
+
+                <!--Encabezado-->
+                <h4 class="text-center wow fadeInDown">Horas de sueño</h4>
+
+                <!--Fila para el icono-->
+                <div class="row-sm-3 text-center">
+                    <i class="material-icons text-center wow fadeIn" style="font-size: 50px">hotel</i>
+                </div>
+
+                <!--Fila para el numero-->
+                <div class="row-sm-3 text-center">
+                    <h3 class="wow fadeInUp" style="font-size: 40px">8</h3>
+                </div>
+
+            </div>
+
+            <!--Columna de horas de entrenamiento-->
+            <div class="col-sm-3">
+
+                <!--Encabezado-->
+                <h4 class="text-center wow fadeInDown">Horas de entrenamiento</h4>
+
+                <!--Fila para el icono-->
+                <div class="row-sm-3 text-center">
+                    <i class="material-icons text-center wow fadeIn" style="font-size: 50px">schedule</i>
+                </div>
+
+                <!--Fila para el numero-->
+                <div class="row-md-3 text-center">
+                    <h3 class="wow fadeInUp" style="font-size: 40px">2</h3>
+                </div>
+            </div>
+
+
+            <!--Columna de Pasos al dia-->
+            <div class="col-sm-3">
+
+                <!--Encabezado-->
+                <h4 class="text-center wow fadeInDown">Pasos al día</h4>
+
+                <!--Fila para el icono-->
+                <div class="row-sm-3 text-center">
+                    <i class="material-icons text-center wow fadeIn" style="font-size: 50px">directions_run</i>
+                </div>
+
+                <!--Fila para el numero-->
+                <div class="row-sm-3 text-center">
+                    <h3 class="wow fadeInUp" style="font-size: 40px">5000</h3>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    
+    <!--Contenido de Experiencias o Testimonios-->
+
+    <section id="ExpCont" class="Experiencias container">
+
+        <!--Titulo de Experiencias-->
+        <h2 class="text-center wow slideInRight" style="margin-bottom: 3%">Algunas experiencias de nuestros usuarios</h2>
+        
+        <!--Salto de linea-->
+        <br>
+
+        <!--Fila que agrupa las 3 cartas de los usuarios una debajo de la otra-->
+        <div class="row justify-content-center">
+
+            <!--Primer usuario-->
+            <div class="card wow zoomIn">
+                <img class="card-img-top" src="Imagenes/Experiencias/Francis.jpeg">
+                <div class="card-body">
+                    <h5 class="card-title">Francis Joaquín Rodríguez</h5>
+                        <p id="Francis" class="card-text text-justify"></p>
+                </div>
+            </div>
+
+
+            <!--Segundo usuario-->
+            <div class="card wow zoomIn">
+                <img class="card-img-top" src="Imagenes/Experiencias/Naysa.jpeg">
+                <div class="card-body">
+                    <h5 class="card-title">Naysa Beltré</h5>
+                    <p id="Naysa" class="card-text text-justify"></p>
+                </div>
+            </div>
+
+
+            <!--Tercer usuario-->
+            <div class="card wow zoomIn">
+                <img class="card-img-top" src="Imagenes/Experiencias/Heidy.jpeg">
+                <div class="card-body">
+                    <h5 class="card-title">Heidy Abreu</h5>
+                    <p id="Heidy" class="card-text text-justify"></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    
+    <!--Seccion de Quienes Somos?-->
+
+    <section id="NosotrosCont" class="Nosotros container-fluid" style="background-color: rgb(75, 74, 74)">
+
+        <!--Contenedor que encierra el titulo y los parrafos-->
+        <div id="contenedorParrafosNosotros" class="container">
+
+            <!--Titulo de la seccion Nosotros-->
+            <h3 class="text-center wow fadeInDown">¿Quiénes somos?</h3>
+            
+            <!--Fila que agrupa los parrafos-->
+            <div class="row">
+                
+                <!--Columnas en la misma fila-->
+
+                <!--Columna izquierda-->
+                <div class="col parrafosNosotros wow fadeInLeft">
+                    <h3>Descripción</h3>
+                    <br>
+                    <p id="descripcion_nosotros" class="text-justify"></p>
+                </div>
+                
+                <!--Columna central-->
+                <div class="col parrafosNosotros wow zoomIn" data-wow-delay="1s">
+                    <h3>Misión</h3>
+                    <br>
+                    <p id="mision_nosotros" class="text-justify"></p>
+                </div>
+
+                <!--Columna derecha-->
+                <div class="col parrafosNosotros wow fadeInRight" data-wow-delay="2s">
+                    <h3>Visión</h3>
+                    <br>
+                    <p id="vision_nosotros" class="text-justify"></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Formulario de Contacto-->
+    
+    <section id="ContactCont" class="Contacto container wow fadeIn" data-wow-duration="3s">
+
+        <!--Titulo del formulario-->
+        <h3 class="text-center" style="padding: 2%">CONTACTANOS</h3>
+
+        <!--Favor de llenar el formulario se genera con un typist-->
+        <p id="favor" class="text-center typist" style="padding: 1%">
+            Si desea contactarnos para cualquier duda o información,
+            favor de llenar el siguiente formulario.
+        </p>
+
+        <!--Definicion del formulario-->
+        <form class="was-validated">
+
+            <!--Nombre-->
+            <div class="form-group">
+                <!--Encabezado-->
+                <label>Nombre</label>
+
+                <!--Caja de texto-->
+                <input type="text" class="form-control" id="nombreText" placeholder="Ingresa tu nombre" required>
+
+                <!--Validacione-->
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+
+            <!--Apellido-->
+            <div class="form-group">
+                <!--Encabezado-->
+                <label>Apellidos</label>
+
+                <!--Caja de texto-->
+                <input type="text" class="form-control" id="apellidoText" placeholder="Ingresa tus apellidos" required>
+                
+                <!--Validaciones-->
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+
+            <!--Correo-->
+            <div class="form-group">
+                <!--Encabezado-->
+                <label for="email">Correo electrónico</label>
+
+                <!--Caja de texto-->
+                <input type="email" class="form-control" id="emailText" placeholder="Ingresa tu correo electrónico" required>
+                
+                <!--Validaciones-->
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+
+            <!--Telefono-->
+            <div class="form-group">
+                <!--Encabezado-->
+                <label>Teléfono</label>
+
+                <!--Caja de texto-->
+                <input type="tel" class="form-control" id="telText" placeholder="Ingresa tu número de teléfono" required>
+                
+                <!--Validaciones-->
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+
+            <!--Mensaje-->
+            <div class="form-group">
+                <!--Encabezado-->
+                <label>Mensaje</label>
+
+                <!--Caja de texto grande-->
+                <textarea class="form-control" id="msjText" placeholder="Escriba aquí su mensaje" required></textarea>
+                
+                <!--Validaciones-->
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback"></div>
+            </div>
+
+            <!--Boton de enviar-->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </section>
+
+    <hr>
+
+    <!--Footer de la pagina-->
+    <footer class="container-fluid">
+
+        <!--Clase copyright-->
+        <h6 class="copyRt" style="padding: 2%"></h6>
+
+    </footer>
+
+
+
+
+
+    <!--Librerias de JS para bootstrap-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+
+    
+    <!--Javascript y WOW-->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/jquery.typist.js"></script>
+
+
+</body>
+
+</html>
